@@ -12,7 +12,7 @@
     "source=/usr/lib/modules,target=/usr/lib/modules,type=bind,readonly"
   ],
   "runArgs": [
-    "--sysctl", "net.ipv6.conf.all.disable_ipv6=0"
+    "--privileged"
   ],
   "postCreateCommand": "git config --global --add safe.directory /go/src/github.com/cilium/cilium"
 }
